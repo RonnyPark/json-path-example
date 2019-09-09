@@ -1,0 +1,41 @@
+{
+  "new": false,
+  "criteriaDataTags": [
+    "SORT_MAP"
+  ],
+  "JobId": 2,
+  "JobName": "01_Y1_CASE_MA_IM_TA",
+  "RetentionPeriod": 3,
+  "Trigger": {
+    "IntervalType": "Daily",
+    "IntervalTime": "06:00:00"
+  },
+  "Criteria": [
+    {
+      "ImportType": "Import DB",
+      "DataTagName": "SORT_MAP",
+      "Attributes": [
+        {
+          "Sequence": 0,
+          "AttributeName": "PROCESS",
+          "AttributeValues": [
+            "CP"
+          ]
+        }
+      ],
+      "TimeAttributes": [
+        {
+          "Sequence": 0,
+          "AttributeName": "TIMESTAMP",
+          "AttributeValue": 20,
+          "AttributeUnit": "Years",
+          "AttributeType": "Recent",
+          "FromTime": "",
+          "ToTime": ""
+        }
+      ],
+      "RuleFileMappings": [],
+      "IsDeleteImportedFiles": "false"
+    }
+  ]
+}
